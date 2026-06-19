@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>ZAID STORE</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f3f3f3;
+scroll-behavior:smooth;
+}
+
+/* HEADER */
+
+header{
+background:#131921;
+position:fixed;
+top:0;
+width:100%;
+padding:15px 6%;
+z-index:999;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:#ff9900;
+font-size:32px;
+font-weight:bold;
+}
+
+.search{
+display:flex;
+width:45%;
+}
+
+.search input{
+flex:1;
+padding:14px;
+border:none;
+outline:none;
+border-radius:8px 0 0 8px;
+}
+
+.search button{
+padding:14px 20px;
+background:#febd69;
+border:none;
+cursor:pointer;
+border-radius:0 8px 8px 0;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+
+background:
+linear-gradient(
+rgba(0,0,0,.5),
+rgba(0,0,0,.5)
+),
+
+url("https://images.unsplash.com/photo-1542838132-92c53300491e");
+
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:70px;
+}
+
+.hero p{
+margin-top:15px;
+font-size:25px;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 40px;
+background:#ff9900;
+color:white;
+text-decoration:none;
+border-radius:40px;
+}
+
+/* INTRO */
+
+.intro{
+background:white;
+padding:100px 10%;
+text-align:center;
+}
+
+.intro h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.intro p{
+font-size:22px;
+line-height:1.7;
+}
+
+/* PRODUCTS */
+
+.products{
+padding:100px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:
+repeat(
+auto-fit,
+minmax(220px,1fr)
+);
+
+gap:30px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.card h3{
+margin:15px;
+}
+
+.price{
+color:green;
+font-size:22px;
+}
+
+.buy{
+display:inline-block;
+margin-top:15px;
+padding:10px 25px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+
+/* ABOUT */
+
+.about{
+background:white;
+padding:100px 10%;
+text-align:center;
+}
+
+.about h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.about p{
+font-size:22px;
+}
+
+/* CONTACT */
+
+.contact{
+padding:100px;
+text-align:center;
+}
+
+.contact-box{
+background:white;
+display:inline-block;
+padding:40px;
+border-radius:20px;
+}
+
+.contact p{
+font-size:22px;
+margin:15px;
+}
+
+/* FOOTER */
+
+footer{
+background:#131921;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+@media(max-width:700px){
+
+.search{
+display:none;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+ZAID STORE
+</div>
+
+<div class="search">
+
+<input
+id="searchInput"
+type="text"
+placeholder="Search Product...">
+
+<button>
+🔍
+</button>
+
+</div>
+
+<div class="menu">
+
+<a href="introdection.html">
+Intro
+</a>
+
+<a href="about.html">
+Products
+</a>
+
+<a href="cont.html">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>
+ZAID ONLINE GROCERY
+</h1>
+
+<p>
+Fresh Grocery • Fast Delivery
+</p>
+
+<a class="btn" href="#products">
+Shop Now
+</a>
+
+</div>
+
+</section>
+
+
+<section id="intro" class="intro">
+
+<h2>
+Welcome To ZAID STORE
+</h2>
+
+<p>
+ZAID STORE ek modern online grocery store hai jahan aap fresh grocery products aasani se order kar sakte ho.
+Fast delivery aur quality hamari priority hai.
+</p>
+
+</section>
+
+
+<section class="products" id="products">
+
+<h2 class="title">
+Popular Products
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+<h3>Aata</h3>
+<div class="price">₹50</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582515073490-dc6f1e76a6f4">
+<h3>Rice</h3>
+<div class="price">₹50</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1563636619-e9143da7973b">
+<h3>Oil</h3>
+<div class="price">₹50</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e">
+<h3>Milk</h3>
+<div class="price">₹50</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1603046891744-76173f4f7d91">
+<h3>Salt</h3>
+<div class="price">₹50</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615485925873-6f7f95d14f6b">
+<h3>Pasta</h3>
+<div class="price">₹50</div>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="about">
+
+<h2>
+About Us
+</h2>
+
+<p>
+Quality grocery aur fast delivery.
+</p>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+<div class="contact-box">
+
+<h2>
+Contact
+</h2>
+
+<p>
+📧 zaidansari@gmail.com
+</p>
+
+<p>
+📱 +91 7042455864
+</p>
+
+<a class="btn"
+href="https://wa.me/917042455864">
+WhatsApp
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 ZAID STORE
+
+</footer>
+
+
+<script>
+
+const searchInput=
+document.getElementById(
+"searchInput"
+);
+
+searchInput.addEventListener(
+"input",
+
+function(){
+
+let value=
+this.value.toLowerCase();
+
+let cards=
+document.querySelectorAll(
+".card"
+);
+
+cards.forEach(card=>{
+
+let text=
+card.querySelector(
+"h3"
+).textContent
+.toLowerCase();
+
+if(
+text.includes(
+value
+)
+){
+
+card.style.display="";
+
+}
+
+else{
+
+card.style.display="none";
+
+}
+
+});
+
+}
+
+);
+
+</script>
+
+</body>
+</html>
